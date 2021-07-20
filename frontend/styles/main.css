@@ -384,3 +384,18 @@ table.table-bordered > tbody > tr > td {
   background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 82.95%);
   min-height: 360px;
 }
+
+.card-list-checkout .card-item-list .image-checkout {
+  width: 230px;
+  float: left;
+}
+
+.card-list-checkout .card-item-list .deskripsi-checkout-item {
+  float: left;
+  margin-left: 15px;
+}
+
+.deskripsi-checkout-item .harga {
+  font-size: 23px;
+  font-weight: 600;
+}
