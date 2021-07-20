@@ -398,4 +398,5 @@ table.table-bordered > tbody > tr > td {
 .deskripsi-checkout-item .harga {
   font-size: 23px;
   font-weight: 600;
+  width: 130px;
 }
