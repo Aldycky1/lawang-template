@@ -151,7 +151,7 @@ header {
 }
 
 .testimonial-content {
-  min-height: 300px;
+  min-height: 400px;
 }
 
 .testimonial-content .quotes {
@@ -353,4 +353,34 @@ table.table-bordered > tbody > tr > td {
 .menu-akun img {
   width: 30px;
   height: 30px;
+}
+
+.centered-gallery {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.meet-our-team {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.centered-about-us {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-about-us .person {
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 82.95%);
+  min-height: 360px;
 }
