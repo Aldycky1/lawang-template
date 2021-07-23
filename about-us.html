@@ -7,7 +7,7 @@
     <title>About Us</title>
     <link
       rel="stylesheet"
-      href="frontend/libraries/bootstrap/css/bootstrap.css"
+      href="/frontend/libraries/bootstrap/css/bootstrap.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,16 +15,16 @@
       href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="frontend/styles/main.css" />
+    <link rel="stylesheet" href="/frontend/styles/main.css" />
   </head>
 
   <body>
     <!-- Navbar -->
     <div class="container">
       <nav class="row navbar navbar-expand-lg navbar-light bg-light">
-        <a href="index.html" class="navbar-brand">
+        <a href="/index.html" class="navbar-brand">
           <img
-            src="frontend/images/logo.png"
+            src="/frontend/images/logo.png"
             alt="logo-nagari-lawang"
             height="66"
           />
@@ -41,10 +41,10 @@
         <div class="collapse navbar-collapse" id="navb">
           <ul class="navbar-nav ml-auto mr-3">
             <li class="nav-item mx-md-1">
-              <a href="index.html" class="nav-link">Home</a>
+              <a href="/index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item mx-md-1">
-              <a href="profil.html" class="nav-link">Profil</a>
+              <a href="/profil.html" class="nav-link">Profil</a>
             </li>
             <li class="nav-item dropdown mx-md-1">
               <a
@@ -55,22 +55,28 @@
                 >Wisata
               </a>
               <div class="dropdown-menu">
-                <a href="soul-puncak-lawang.html" class="dropdown-item"
+                <a href="/soul-puncak-lawang.html" class="dropdown-item"
                   >Soul Puncak Lawang</a
-                ><a href="#" class="dropdown-item">Lawang Park</a
-                ><a href="#" class="dropdown-item">Ambun Tanai</a>
+                ><a href="/lawang-adventure-park.html" class="dropdown-item"
+                  >Lawang Park</a
+                ><a href="/ambun-tanai.html" class="dropdown-item"
+                  >Ambun Tanai</a
+                >
               </div>
             </li>
             <li class="nav-item mx-md-1">
-              <a href="gallery.html" class="nav-link">Gallery</a>
+              <a href="/gallery.html" class="nav-link">Gallery</a>
             </li>
             <li class="nav-item mx-md-1">
-              <a href="#" class="nav-link active">About Us</a>
+              <a href="/about-us.html" class="nav-link active">About Us</a>
             </li>
           </ul>
 
           <!-- Desktop Button -->
-          <form class="form-inline my-2 my-lg-0 d-sm-block" action="login.html">
+          <form
+            class="form-inline my-2 my-lg-0 d-sm-block"
+            action="/login.html"
+          >
             <button class="btn btn-login btn-navbar-right my-2 my-sm-0">
               Log In
             </button>
@@ -110,7 +116,7 @@
             <div class="col-12">
               <div class="hero-pic">
                 <img
-                  src="frontend/images/hero-about-us.jpg"
+                  src="/frontend/images/hero-about-us.jpg"
                   alt=""
                   class="img-fluid"
                 />
@@ -132,7 +138,7 @@
             <div class="col-6">
               <div class="foto-tim-kiri float-right px-5">
                 <img
-                  src="frontend/images/aldy-person.jpg"
+                  src="/frontend/images/aldy-person.jpg"
                   style="width: 220px"
                   class="rounded-circle"
                   alt=""
@@ -143,20 +149,33 @@
               <div class="deskripsi-tim-kiri mr-auto float-left px-5">
                 <h3>Aldycky Bagus Witjaksana</h3>
                 <p>Product Owner</p>
+                <p class="quotes mt-2">
+                  "Being cool is being your own self, not
+                  <br />
+                  doing something that someone else is
+                  <br />
+                  telling you to do"
+                </p>
               </div>
             </div>
           </div>
+
           <div class="row person mt-5">
             <div class="col-6">
               <div class="deskripsi-tim-kanan float-right px-5">
                 <h3>Alifah Fadiyah</h3>
-                <p>Position</p>
+                <p>Scrum Team</p>
+                <p class="quotes mt-2">
+                  "Tetap semangat apapun
+                  <br />
+                  kondisinya... you can do it"
+                </p>
               </div>
             </div>
             <div class="col-6">
               <div class="foto-tim-kanan float-left px-5">
                 <img
-                  src="frontend/images/alifah-person.jpg"
+                  src="/frontend/images/alifah-person.jpg"
                   style="width: 220px"
                   class="rounded-circle"
                   alt=""
@@ -168,7 +187,7 @@
             <div class="col-6">
               <div class="foto-tim-kiri float-right px-5">
                 <img
-                  src="frontend/images/alifiah-person.jpg"
+                  src="/frontend/images/alifiah-person.jpg"
                   style="width: 220px"
                   class="rounded-circle"
                   alt=""
@@ -178,7 +197,8 @@
             <div class="col-6">
               <div class="deskripsi-tim-kiri float-left px-5">
                 <h3>Alifiah Putri Aisyah</h3>
-                <p>Position</p>
+                <p>Scrum Team</p>
+                <p class="quotes mt-2">"Jangan lupa bahagia"</p>
               </div>
             </div>
           </div>
@@ -186,13 +206,14 @@
             <div class="col-6">
               <div class="deskripsi-tim-kanan float-right px-5">
                 <h3>Haniifah Fawziyyah</h3>
-                <p>Position</p>
+                <p>Scrum Team</p>
+                <p class="quotes mt-2">"Gue gak punya quotes"</p>
               </div>
             </div>
             <div class="col-6">
               <div class="foto-tim-kanan float-left px-5">
                 <img
-                  src="frontend/images/alifah-person.jpg"
+                  src="/frontend/images/haniifah-person.jpg"
                   style="width: 220px"
                   class="rounded-circle"
                   alt=""
@@ -200,12 +221,11 @@
               </div>
             </div>
           </div>
-
           <div class="row person mt-5">
             <div class="col-6">
               <div class="foto-tim-kiri float-right px-5">
                 <img
-                  src="frontend/images/alifah-person.jpg"
+                  src="/frontend/images/liza-person.jpg"
                   style="width: 220px"
                   class="rounded-circle"
                   alt=""
@@ -215,7 +235,8 @@
             <div class="col-6">
               <div class="deskripsi-tim-kiri float-left px-5">
                 <h3>Liza Nadia Lianza</h3>
-                <p>Position</p>
+                <p>Scrum Team</p>
+                <p class="quotes mt-2">"Gue gak punya quotes"</p>
               </div>
             </div>
           </div>
@@ -223,13 +244,18 @@
             <div class="col-6">
               <div class="deskripsi-tim-kanan float-right px-5">
                 <h3>Nabilah Azzahra Nasution</h3>
-                <p>Position</p>
+                <p>Scrum Master</p>
+                <p>
+                  "Berjalan di atas waktu, bukan
+                  <br />
+                  waktu yang menjalankan"
+                </p>
               </div>
             </div>
             <div class="col-6">
               <div class="foto-tim-kanan float-left px-5">
                 <img
-                  src="frontend/images/alifah-person.jpg"
+                  src="/frontend/images/nabiilah-person.jpg"
                   style="width: 220px"
                   class="rounded-circle"
                   alt=""
@@ -293,7 +319,7 @@
       </div>
     </footer>
 
-    <script src="frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
-    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="/frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/frontend/libraries/bootstrap/js/bootstrap.js"></script>
   </body>
 </html>

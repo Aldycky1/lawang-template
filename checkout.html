@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
+    <title>Checkout</title>
     <link
       rel="stylesheet"
       href="/frontend/libraries/bootstrap/css/bootstrap.css"
@@ -22,7 +22,7 @@
     <!-- Navbar -->
     <div class="container">
       <nav class="row navbar navbar-expand-lg navbar-light bg-light">
-        <a href="/index.html" class="navbar-brand">
+        <a href="#" class="navbar-brand">
           <img
             src="/frontend/images/logo.png"
             alt="logo-nagari-lawang"
@@ -41,10 +41,10 @@
         <div class="collapse navbar-collapse" id="navb">
           <ul class="navbar-nav ml-auto mr-3">
             <li class="nav-item mx-md-1">
-              <a href="/index.html" class="nav-link">Home</a>
+              <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item mx-md-1">
-              <a href="/profil.html" class="nav-link">Profil</a>
+              <a href="#" class="nav-link">Profil</a>
             </li>
             <li class="nav-item dropdown mx-md-1">
               <a
@@ -54,29 +54,17 @@
                 data-toggle="dropdown"
                 >Wisata
               </a>
-              <div class="dropdown-menu">
-                <a href="/soul-puncak-lawang.html" class="dropdown-item"
-                  >Soul Puncak Lawang</a
-                ><a href="/lawang-adventure-park.html" class="dropdown-item"
-                  >Lawang Park</a
-                ><a href="/ambun-tanai.html" class="dropdown-item"
-                  >Ambun Tanai</a
-                >
-              </div>
             </li>
             <li class="nav-item mx-md-1">
-              <a href="/gallery.html" class="nav-link">Gallery</a>
+              <a href="#" class="nav-link">Gallery</a>
             </li>
             <li class="nav-item mx-md-1">
-              <a href="/about-us.html" class="nav-link">About Us</a>
+              <a href="#" class="nav-link">About Us</a>
             </li>
           </ul>
 
           <!-- Desktop Button -->
-          <form
-            class="form-inline my-2 my-lg-0 d-sm-block"
-            action="/login.html"
-          >
+          <form class="form-inline my-2 my-lg-0 d-sm-block">
             <button class="btn btn-login btn-navbar-right my-2 my-sm-0">
               Log In
             </button>
@@ -89,78 +77,41 @@
 
     <!-- header -->
     <header>
-      <h2 class="text-center mb-5">Mendaftarkan akun</h2>
+      <h2 class="text-center mb-5">Checkout</h2>
     </header>
 
-    <div class="card p-5 login">
-      <form action="index-logged.html">
-        <h5 class="mb-4">
-          Lengkapi informasi di bawah ini untuk mendaftarkan akun Anda
-        </h5>
-        <div class="form-group">
-          <label for="email" class="font-weight-bold">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="Masukkan email"
-            aria-describedby="emailHelp"
-          />
+    <section class="section-checkout">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 mx-auto">
+            <div class="card p-5">
+              <div class="checkout-info">
+                <h5 class="mb-4">Checkout information</h5>
+                <p class="float-left">Total</p>
+                <p class="float-right font-weight-bolder">Rp. 1.000.000</p>
+              </div>
+              <div class="checkout-payment">
+                <h5 class="mb-4">Payment instructions</h5>
+                <div
+                  class="float-left"
+                  style="width: 70px; height: 70px; background-color: #c4c4c4"
+                ></div>
+                <div class="float-left ml-3">
+                  <p>No.rekening</p>
+                  <p class="font-weight-bolder">10 642 703 5</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-block btn-utama mt-5">
+                Saya sudah membayar
+              </button>
+              <a href="index.html" class="btn btn-block text-u"> Cancel </a>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="password" class="font-weight-bold">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="password"
-            placeholder="Masukkan password"
-          />
-        </div>
-        <div class="form-group">
-          <label for="nomor_telepon" class="font-weight-bold"
-            >Nomor Telepon</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="nomor_telepon"
-            placeholder="Masukkan nomor telepon"
-          />
-        </div>
-        <div class="form-group">
-          <label for="nama" class="font-weight-bold">Nama</label>
-          <input
-            type="text"
-            class="form-control"
-            id="nama"
-            placeholder="Masukkan nama"
-          />
-        </div>
-        <div class="form-group">
-          <label for="pilihJenisKelamin" class="font-weight-bold"
-            >Jenis kelamin</label
-          >
-          <select id="pilihJenisKelamin" class="form-control">
-            <option selected value="Laki-Laki">Laki-laki</option>
-            <option value="Perempuan">Perempuan</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="tanggalLahir" class="font-weight-bold"
-            >Tanggal lahir</label
-          >
-          <input
-            type="date"
-            class="form-control"
-            id="tanggalLahir"
-            placeholder="Masukkan tanggal lahir"
-          />
-        </div>
-        <button type="submit" class="btn btn-block btn-utama mt-5">
-          Daftar
-        </button>
-      </form>
-    </div>
+      </div>
+    </section>
 
     <footer class="section-footer mt-5 mb-4 border-top">
       <div class="container pt-5 pb-5">

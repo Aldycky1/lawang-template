@@ -400,3 +400,12 @@ table.table-bordered > tbody > tr > td {
   font-weight: 600;
   width: 130px;
 }
+
+.person .quotes {
+  color: #4f5972;
+}
+
+.deskripsi-tim-kiri p,
+.deskripsi-tim-kanan p {
+  font-size: 24px;
+}

@@ -7,7 +7,7 @@
     <title>Akun</title>
     <link
       rel="stylesheet"
-      href="frontend/libraries/bootstrap/css/bootstrap.css"
+      href="/frontend/libraries/bootstrap/css/bootstrap.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,16 +15,16 @@
       href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="frontend/styles/main.css" />
+    <link rel="stylesheet" href="/frontend/styles/main.css" />
   </head>
 
   <body>
     <!-- Navbar -->
     <div class="container">
       <nav class="row navbar navbar-expand-lg navbar-light bg-light">
-        <a href="index-logged.html" class="navbar-brand">
+        <a href="/index-logged.html" class="navbar-brand">
           <img
-            src="frontend/images/logo.png"
+            src="/frontend/images/logo.png"
             alt="logo-nagari-lawang"
             height="66"
           />
@@ -41,10 +41,10 @@
         <div class="collapse navbar-collapse" id="navb">
           <ul class="navbar-nav ml-auto mr-3">
             <li class="nav-item mx-md-1">
-              <a href="index.html" class="nav-link">Home</a>
+              <a href="/index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item mx-md-1">
-              <a href="profil.html" class="nav-link">Profil</a>
+              <a href="/profil.html" class="nav-link">Profil</a>
             </li>
             <li class="nav-item dropdown mx-md-1">
               <a
@@ -55,17 +55,20 @@
                 >Wisata
               </a>
               <div class="dropdown-menu">
-                <a href="soul-puncak-lawang.html" class="dropdown-item"
+                <a href="/soul-puncak-lawang.html" class="dropdown-item"
                   >Soul Puncak Lawang</a
-                ><a href="#" class="dropdown-item">Lawang Park</a
-                ><a href="#" class="dropdown-item">Ambun Tanai</a>
+                ><a href="/lawang-adventure-park.html" class="dropdown-item"
+                  >Lawang Park</a
+                ><a href="/ambun-tanai.html" class="dropdown-item"
+                  >Ambun Tanai</a
+                >
               </div>
             </li>
             <li class="nav-item mx-md-1">
-              <a href="#" class="nav-link">Gallery</a>
+              <a href="/gallery.html" class="nav-link">Gallery</a>
             </li>
             <li class="nav-item mx-md-1">
-              <a href="#" class="nav-link">About Us</a>
+              <a href="/about-us.html" class="nav-link">About Us</a>
             </li>
             <!-- Desktop Button -->
           </ul>
@@ -79,10 +82,10 @@
                 >Alifah Fadiyah
               </a>
               <div class="dropdown-menu">
-                <a href="#" class="dropdown-item active">Ubah Profil</a
-                ><a href="daftar-checkout.html" class="dropdown-item"
+                <a href="/akun.html" class="dropdown-item active">Ubah Profil</a
+                ><a href="/daftar-checkout.html" class="dropdown-item"
                   >Daftar Checkout</a
-                ><a href="index.html" class="dropdown-item">Keluar</a>
+                ><a href="/index.html" class="dropdown-item">Keluar</a>
               </div>
             </li>
           </ul>
@@ -104,7 +107,7 @@
               <div class="row akun">
                 <div class="col-2 align-self-center">
                   <div class="img">
-                    <img src="frontend/images/ic_akun.png" alt="" />
+                    <img src="/frontend/images/ic_akun.png" alt="" />
                   </div>
                 </div>
                 <div class="col">
@@ -118,10 +121,13 @@
                 <div class="col">
                   <ul class="nav flex-column">
                     <li class="nav-item">
-                      <a class="nav-link active d-block text-center" href="#">
+                      <a
+                        class="nav-link active d-block text-center"
+                        href="/akun.html"
+                      >
                         <div class="row">
                           <div class="col-1">
-                            <img src="frontend/images/ic-orang-1.png" alt="" />
+                            <img src="/frontend/images/ic-orang-1.png" alt="" />
                           </div>
                           <div class="col align-self-center pl-0">
                             <span>Ubah Profil</span>
@@ -132,12 +138,12 @@
                     <li class="nav-item">
                       <a
                         class="nav-link d-block text-center"
-                        href="daftar-checkout.html"
+                        href="/daftar-checkout.html"
                       >
                         <div class="row">
                           <div class="col-1">
                             <img
-                              src="frontend/images/ic-list-checkout.png"
+                              src="/frontend/images/ic-list-checkout.png"
                               alt=""
                             />
                           </div>
@@ -148,10 +154,13 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link d-block text-center" href="index.html">
+                      <a
+                        class="nav-link d-block text-center"
+                        href="/index.html"
+                      >
                         <div class="row">
                           <div class="col-1">
-                            <img src="frontend/images/ic_logout.png" alt="" />
+                            <img src="/frontend/images/ic_logout.png" alt="" />
                           </div>
                           <div class="col align-self-center pl-0">
                             <span>Keluar</span>
@@ -276,7 +285,7 @@
       </div>
     </footer>
 
-    <script src="frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
-    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="/frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/frontend/libraries/bootstrap/js/bootstrap.js"></script>
   </body>
 </html>
