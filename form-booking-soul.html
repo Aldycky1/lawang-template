@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Upload bukti pembayaran</title>
+    <title>Form Booking</title>
     <link
       rel="stylesheet"
       href="/frontend/libraries/bootstrap/css/bootstrap.css"
@@ -67,10 +67,10 @@
               </div>
             </li>
             <li class="nav-item mx-md-1">
-              <a href="/gallery.html" class="nav-link">Gallery</a>
+              <a href="/gallery-logged.html" class="nav-link">Gallery</a>
             </li>
             <li class="nav-item mx-md-1">
-              <a href="/about-us.html" class="nav-link">About Us</a>
+              <a href="/about-us-logged.html" class="nav-link">About Us</a>
             </li>
           </ul>
 
@@ -99,49 +99,77 @@
 
     <!-- header -->
     <header>
-      <h2 class="text-center mb-5">Upload Bukti Pembayaran</h2>
+      <h2 class="text-center mb-5">Form Booking</h2>
     </header>
 
-    <section class="section-checkout">
-      <div class="container">
-        <div class="row">
-          <div class="col-7">
-            <div class="card p-5">
-              <form action="/index-logged.html">
-                <label for="bukti-pembayaran" class="font-weight-bold">
-                  Bukti pembayaran
-                </label>
-                <input type="file" class="form-control" id="bukti-pembayaran" />
-                <button type="submit" class="btn btn-block btn-utama mt-5">
-                  Kirim
-                </button>
-              </form>
-            </div>
-          </div>
-          <div class="col-5">
-            <div class="card p-5">
-              <div class="checkout-info">
-                <h5 class="mb-4">Checkout information</h5>
-                <p class="float-left">Total</p>
-                <p class="float-right font-weight-bolder">Rp. 1.000.000</p>
-              </div>
-              <div class="checkout-payment">
-                <h5 class="mb-4">Payment instructions</h5>
-                <div
-                  class="float-left"
-                  style="width: 70px; height: 70px; background-color: #c4c4c4"
-                ></div>
-                <div class="float-left ml-3">
-                  <p>No.rekening</p>
-                  <p class="font-weight-bolder">10 642 703 5</p>
-                </div>
-              </div>
-            </div>
-            <div></div>
-          </div>
+    <div class="card p-5 login">
+      <form action="/checkout.html">
+        <div class="form-group">
+          <label for="tempatWisata" class="font-weight-bold"
+            >Tempat Wisata</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="tempatWisata"
+            value="Soul Puncak Lawang"
+            readonly
+          />
         </div>
-      </div>
-    </section>
+        <div class="form-group">
+          <label for="pilihPaket" class="font-weight-bold">Paket Pilihan</label>
+          <select id="pilihPaket" class="form-control">
+            <option selected value="2 Hari 1 Malam">2 Hari 1 Malam</option>
+            <option value="3 Hari 2 Malam">3 Hari 2 Malam</option>
+            <option value="4 Hari 3 Malam">4 Hari 3 Malam</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pilihHotel" class="font-weight-bold">Pilih Hotel</label>
+          <select id="pilihHotel" class="form-control">
+            <option selected value="Hotel Benteng">Hotel Benteng</option>
+            <option value="OYO 555 Aedo">OYO 555 Aedo</option>
+            <option value="Campago Hotel">Campago Hotel</option>
+            <option value="Grand Gallery Hotel Bukittinggi">
+              Grand Gallery Hotel Bukittinggi
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pilihJumlahOrang" class="font-weight-bold"
+            >Pilih Jumlah Orang</label
+          >
+          <select id="pilihJumlahOrang" class="form-control">
+            <option selected value="2-3 orang">2-3 orang</option>
+            <option value="4-5 orang">4-5 orang</option>
+            <option value="6-9 orang">6-9 orang</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="namaPemesan" class="font-weight-bold">Nama Pemesan</label>
+          <input
+            type="text"
+            class="form-control"
+            id="namaPemesan"
+            placeholder="Masukkan nama"
+          />
+        </div>
+        <div class="form-group">
+          <label for="tanggalPenginapan" class="font-weight-bold"
+            >Tanggal Penginapan</label
+          >
+          <input
+            type="date"
+            class="form-control"
+            id="tanggalPenginapan"
+            placeholder="Masukkan tanggal lahir"
+          />
+        </div>
+        <button type="submit" class="btn btn-block btn-utama mt-5">
+          Checkout
+        </button>
+      </form>
+    </div>
 
     <footer class="section-footer mt-5 mb-4 border-top">
       <div class="container pt-5 pb-5">
